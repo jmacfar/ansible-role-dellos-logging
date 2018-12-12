@@ -47,7 +47,7 @@ dellos_logging:
  
 ###################################################}
 {% if dellos_logging is defined and dellos_logging %}
-{% for key,value in dellos_logging.iteritems() %}
+{% for key,value in dellos_logging.items() %}
   {% if key == "buffer" %}
     {% if value %}
 logging buffered {{ value }}
